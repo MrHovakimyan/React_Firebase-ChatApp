@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import AuthProvider from "./context/auth";
 import PrivateRoute from "./components/PrivateRoute";
 
@@ -15,6 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<PrivateRoute />}>
             <Route path="/" element={<Home />} />
+          </Route>
+          <Route path="/profile" element={<PrivateRoute />}>
+            <Route path="/profile" element={<Profile />} />
           </Route>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
