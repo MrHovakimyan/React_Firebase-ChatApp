@@ -25,6 +25,7 @@ nav {
 nav a {
   color: var(--color-2);
   text-decoration: none;
+  margin: 10px;
 }
 nav div a {
   margin-right: 20px;
@@ -62,7 +63,8 @@ section form {
   margin: 10px 0px;
   text-align: center;
 }
-.register_btn {
+.register_btn,
+.logOut_btn {
   padding: 10px;
   border-radius: 5px;
   outline: none;
@@ -72,9 +74,11 @@ section form {
   cursor: pointer;
   transition: 0.3s ease-in-out all;
   font-size: 16px;
+  margin-right: 10px;
 }
-.register_btn:hover {
-  transform: scale(1.05);
+.register_btn:hover,
+.logOut_btn:hover {
+  transform: scale(1.1);
 }
 .error {
   text-align: center;
