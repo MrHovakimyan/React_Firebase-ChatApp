@@ -125,7 +125,7 @@ section form {
   text-align: left;
 }
 
-/* Home page */
+/* HOME PAGE */
 .home_container {
   position: relative;
   display: grid;
@@ -134,6 +134,7 @@ section form {
   height: calc(100vh - 70px);
   width: 100vw;
 }
+/* Users list */
 .users_container {
   margin-top: 10px;
   border-right: 2px solid var(--color-6);
@@ -172,4 +173,19 @@ section form {
 }
 .offline {
   background: var(--color-5);
+}
+/* Chat container */
+.messages_container {
+  position: relative;
+  width: 100%;
+}
+.messages_user {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--color-6);
+}
+.no_conv {
+  font-size: 20px;
+  color: var(--color-4);
+  text-align: center;
 }
